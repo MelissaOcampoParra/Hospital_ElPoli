@@ -1,0 +1,142 @@
+/* Hospital El Poli — estilos globales (alineados al proyecto HTML estático) */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f8;
+  color: #333333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #1a6fb5;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0 0 10px 0;
+  font-size: 28px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+nav ul li a:hover {
+  background-color: #0f4d8a;
+}
+
+nav ul li a.activo {
+  background-color: #0f4d8a;
+}
+
+main {
+  width: 90%;
+  max-width: 900px;
+  margin: 30px auto;
+}
+
+section {
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+section h2 {
+  color: #1a6fb5;
+  border-bottom: 2px solid #1a6fb5;
+  padding-bottom: 8px;
+  margin-bottom: 15px;
+}
+
+section p {
+  margin-bottom: 10px;
+}
+
+section ul {
+  padding-left: 20px;
+}
+
+section ul li {
+  margin-bottom: 8px;
+  font-size: 15px;
+}
+
+img {
+  width: 280px;
+  height: auto;
+  max-width: 100%;
+  margin: 10px 10px 10px 0;
+  border: 2px solid #cccccc;
+  vertical-align: top;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th,
+td {
+  border: 1px solid #cccccc;
+  padding: 10px 15px;
+  text-align: left;
+}
+
+th {
+  background-color: #1a6fb5;
+  color: #ffffff;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f2f6fb;
+}
+
+footer {
+  background-color: #0f4d8a;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+footer p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.mensaje-error {
+  background-color: #fdecea;
+  color: #c0392b;
+  border: 1px solid #e74c3c;
+  padding: 10px;
+  margin-top: 12px;
+  font-weight: bold;
+}
+
+.mensaje-exito {
+  background-color: #eafaf1;
+  color: #1e8449;
+  border: 1px solid #2ecc71;
+  padding: 10px;
+  margin-top: 12px;
+  font-weight: bold;
+}

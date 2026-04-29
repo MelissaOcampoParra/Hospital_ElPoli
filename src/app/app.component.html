@@ -1,0 +1,27 @@
+<header>
+  <h1>Hospital El Poli</h1>
+  <nav>
+    <ul>
+      <li>
+        <a routerLink="/" routerLinkActive="activo" [routerLinkActiveOptions]="{ exact: true }">Inicio</a>
+      </li>
+      <li>
+        <a routerLink="/" fragment="servicios">Servicios</a>
+      </li>
+      <li>
+        <a routerLink="/" fragment="horarios">Horarios</a>
+      </li>
+      <li>
+        <a routerLink="/citas" routerLinkActive="activo">Citas</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<router-outlet />
+
+<footer>
+  <p>Hospital El Poli &mdash; Calle 45 # 12-30, Bogotá</p>
+  <p>Teléfono: (601) 234-5678</p>
+  <p>&copy; {{ anio }} Hospital El Poli. Todos los derechos reservados.</p>
+</footer>

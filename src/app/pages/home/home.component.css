@@ -1,0 +1,35 @@
+.saludo {
+  font-weight: bold;
+  color: #1a6fb5;
+}
+
+.home-illos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.home-illo {
+  width: 280px;
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #cccccc;
+  flex-shrink: 0;
+}
+
+.cita-link .btn-primary {
+  display: inline-block;
+  margin-top: 8px;
+  background-color: #1a6fb5;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 15px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.cita-link .btn-primary:hover {
+  background-color: #0f4d8a;
+}

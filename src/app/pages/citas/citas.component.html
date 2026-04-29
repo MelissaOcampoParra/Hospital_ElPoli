@@ -1,0 +1,77 @@
+<main class="citas-page">
+  <section>
+    <h2>{{ editingId ? 'Editar cita' : 'Nueva cita' }}</h2>
+    <p class="hint">Los datos se guardan solo en este navegador (localStorage). No hay servidor.</p>
+
+    <div class="form-row">
+      <label for="nombre">Nombre</label>
+      <input id="nombre" name="nombre" type="text" [(ngModel)]="nombre" placeholder="Nombre completo" />
+    </div>
+    <div class="form-row">
+      <label for="fecha">Fecha</label>
+      <input id="fecha" name="fecha" type="date" [(ngModel)]="fecha" />
+    </div>
+    <div class="form-row">
+      <label for="correo">Correo</label>
+      <input id="correo" name="correo" type="email" [(ngModel)]="correo" placeholder="correo@ejemplo.com" />
+    </div>
+    <div class="form-row">
+      <label for="especialidad">Especialidad</label>
+      <input
+        id="especialidad"
+        name="especialidad"
+        type="text"
+        [(ngModel)]="especialidad"
+        placeholder="Ej: Medicina General, Laboratorio…"
+      />
+    </div>
+
+    <div class="form-actions">
+      <button type="button" class="btn-submit" (click)="submit()">
+        {{ editingId ? 'Actualizar cita' : 'Guardar cita' }}
+      </button>
+      @if (editingId) {
+        <button type="button" class="btn-secondary" (click)="cancelEdit()">Cancelar edición</button>
+      }
+    </div>
+
+    @if (formMessage) {
+      <p [class]="formMessageClass">{{ formMessage }}</p>
+    }
+  </section>
+
+  <section>
+    <h2>Listado de citas</h2>
+    @if (citaService.citas().length === 0) {
+      <p class="empty">No hay citas registradas. Crea una con el formulario superior.</p>
+    } @else {
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Fecha</th>
+              <th>Correo</th>
+              <th>Especialidad</th>
+              <th class="col-actions">Acciones</th>
+            </tr>
+          </thead>
+          <tbody>
+            @for (c of citaService.citas(); track c.id) {
+              <tr>
+                <td>{{ c.nombre }}</td>
+                <td>{{ c.fecha }}</td>
+                <td>{{ c.correo }}</td>
+                <td>{{ c.especialidad }}</td>
+                <td class="col-actions">
+                  <button type="button" class="btn-link" (click)="startEdit(c)">Editar</button>
+                  <button type="button" class="btn-danger" (click)="remove(c)">Eliminar</button>
+                </td>
+              </tr>
+            }
+          </tbody>
+        </table>
+      </div>
+    }
+  </section>
+</main>
