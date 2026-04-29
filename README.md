@@ -6,6 +6,22 @@ Proyecto académico de **front-end**: sitio institucional del Hospital El Poli d
 
 ---
 
+## Vista de la aplicación
+
+Capturas de la interfaz con el proyecto en ejecución en local (`npm start` / `ng serve`, [http://localhost:4200/](http://localhost:4200/)).
+
+### Página de inicio
+
+![Página de inicio — bienvenida, servicios y horarios](./docs/screenshots/readme-inicio.png)
+
+### Gestión de citas (CRUD)
+
+![Formulario y listado de citas](./docs/screenshots/readme-citas-crud.png)
+
+> **Nota:** Si quieres usar **tus propias capturas reales**, haz la captura del navegador (por ejemplo en Windows: **Win + Shift + S** o la *Herramienta Recortes*), guarda los archivos en `docs/screenshots/` y sustituye los PNG anteriores o cambia los nombres y enlaces en este README.
+
+---
+
 ## Autoría
 
 | | |
@@ -55,6 +71,8 @@ También puedes usar `npx ng serve`.
 
 ```
 Hospital_ElPoli/
+├── docs/
+│   └── screenshots/        # Capturas para el README (puedes añadir las tuyas)
 ├── public/                 # Recursos estáticos (p. ej. favicon)
 ├── src/
 │   ├── app/
