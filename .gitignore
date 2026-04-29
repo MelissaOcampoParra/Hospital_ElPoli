@@ -22,11 +22,10 @@ pnpm-debug.log*
 .settings/
 *.sublime-workspace
 
-# Visual Studio Code / Cursor (preferencias locales; no versionar en el trabajo académico)
+# Visual Studio Code / Cursor
 .vscode/
 .history/
 
-# Cursor (opcional)
 .cursor/
 
 # Angular
@@ -42,10 +41,10 @@ testem.log
 /connect.lock
 /typings
 
-# Sass (si en el futuro usas preprocessors)
+# Sass
 .sass-cache/
 
-# Environment & secrets (no subir claves)
+# Environment (secrets)
 .env
 .env.*
 !.env.example
@@ -55,5 +54,5 @@ testem.log
 Thumbs.db
 Desktop.ini
 
-# Optional: logs locales
+# Logs
 *.log

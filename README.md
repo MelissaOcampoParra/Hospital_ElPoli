@@ -18,8 +18,6 @@ Capturas de la interfaz con el proyecto en ejecución en local (`npm start` / `n
 
 ![Formulario y listado de citas](./docs/screenshots/readme-citas-crud.png)
 
-> **Nota:** Si quieres usar **tus propias capturas reales**, haz la captura del navegador (por ejemplo en Windows: **Win + Shift + S** o la *Herramienta Recortes*), guarda los archivos en `docs/screenshots/` y sustituye los PNG anteriores o cambia los nombres y enlaces en este README.
-
 ---
 
 ## Autoría
@@ -28,8 +26,6 @@ Capturas de la interfaz con el proyecto en ejecución en local (`npm start` / `n
 |:---|:---|
 | **Nombre** | Melissa Ocampo Parra |
 | **Correo** | [c.melissa.ocampo.parra@gmail.com](mailto:c.melissa.ocampo.parra@gmail.com) |
-
-Los commits de este repositorio se realizan con la firma de autoría indicada arriba.
 
 ---
 
@@ -55,7 +51,7 @@ npm start
 ```
 
 La aplicación queda disponible en [http://localhost:4200/](http://localhost:4200/).  
-También puedes usar `npx ng serve`.
+Equivalente: `npx ng serve`.
 
 ## Scripts principales
 
@@ -72,7 +68,7 @@ También puedes usar `npx ng serve`.
 ```
 Hospital_ElPoli/
 ├── docs/
-│   └── screenshots/        # Capturas para el README (puedes añadir las tuyas)
+│   └── screenshots/        # Capturas para el README
 ├── public/                 # Recursos estáticos (p. ej. favicon)
 ├── src/
 │   ├── app/
